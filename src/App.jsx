@@ -11,8 +11,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='manage/item' element={<ManageItems />} />
-          <Route path='manage/user' element={<ManageUsers />} />
+          <Route path='manage/items' element={<ManageItems />} />
+          <Route path='manage/users' element={<ManageUsers />} />
         </Routes>
       </BrowserRouter>
     </>

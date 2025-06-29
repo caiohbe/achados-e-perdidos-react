@@ -14,7 +14,6 @@ const CssReset = createGlobalStyle`
   figure, figcaption, footer, header, hgroup, 
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video,input {
-    background-color: #242424; 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -29,6 +28,8 @@ const CssReset = createGlobalStyle`
     display: block;
   }
   body {
+        background-color: #242424; 
+
     line-height: 1;
     color: #fafafa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
