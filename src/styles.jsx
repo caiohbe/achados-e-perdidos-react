@@ -85,6 +85,7 @@ const GridItem = styled.div`
   &:hover {
     cursor: pointer;
     filter: brightness(108%);
+    background-color: #64f8;
   }
 
   img {
