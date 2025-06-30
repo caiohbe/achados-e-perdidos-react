@@ -43,10 +43,14 @@ const MainContainer = styled.div`
 
 const NavBar = styled.div`
   border-right: 1px solid #64f8;
-  width: 12%;
+  flex: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const NavButton = styled(Link)`
@@ -71,7 +75,7 @@ const ItemsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   overflow-y: auto;
-  width: 88%;
+  flex: 22;
 `
 
 const GridItem = styled.div`
