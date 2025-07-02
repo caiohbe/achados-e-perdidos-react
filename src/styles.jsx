@@ -168,7 +168,7 @@ const Status = styled.span`
 
 const CloseButton = styled.button`
   position: absolute;
-  top: 1rem;
+  top: 0.2rem;
   right: 1rem;
   background: none;
   color: #fafafa;
@@ -179,6 +179,26 @@ const CloseButton = styled.button`
   &:hover {
     color: #ff6b6b;
   }
+`
+
+const ReturnButton = styled.button`
+  background-color: #b2f2bb;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  color: #242424;
+  margin: 10px;
+`
+
+const CancelButton = styled(ReturnButton)`
+  background-color: #ff6b6b;
+`
+
+const EditButton = styled(ReturnButton)`
+  background-color: #fafafa;
+  position: absolute;
+  top: 0.2rem;
+  left: 1rem;
 `
 
 export {
@@ -196,4 +216,7 @@ export {
   SearchBar,
   SearchContainer,
   Wrapper,
+  ReturnButton,
+  EditButton,
+  CancelButton,
 }
