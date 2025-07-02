@@ -158,8 +158,8 @@ function Home() {
 
       <MainContainer>
         <NavBar>
-          <NavButton to={"/manage/users"}>Gerenciar Usuários</NavButton>
-          <NavButton to={"/manage/places"}>Gerenciar Locais</NavButton>
+          <NavButton to={"/users"}>Gerenciar Usuários</NavButton>
+          <NavButton to={"/places"}>Gerenciar Locais</NavButton>
         </NavBar>
         <ItemsGrid>
           <GridItem onClick={() => setIsCreating(true)}>
@@ -287,7 +287,6 @@ function Home() {
               </>
             ) : isEditing ? (
               <>
-                {/* 🔥 Bloco do editor */}
                 <label>
                   Item:
                   <input
@@ -566,7 +565,7 @@ export async function fetchItems(search) {
   return res.data
 }
 
-function useDebounce(value, delay) {
+export function useDebounce(value, delay) {
   const [debouncedValue, setDebouncedValue] = useState(value)
   useEffect(() => {
     const handler = setTimeout(() => {

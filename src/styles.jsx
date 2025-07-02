@@ -201,6 +201,14 @@ const EditButton = styled(ReturnButton)`
   left: 1rem;
 `
 
+const UserList = styled.div`
+  display: block;
+  flex: 22;
+  padding: 1rem;
+  align-items: center;
+  overflow-y: scroll;
+`
+
 export {
   Status,
   CloseButton,
@@ -219,4 +227,5 @@ export {
   ReturnButton,
   EditButton,
   CancelButton,
+  UserList,
 }

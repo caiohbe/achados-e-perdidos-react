@@ -3,6 +3,7 @@ import Home from "./home"
 import CssReset from "./assets/cssReset"
 import ManageUsers from "./manageUsers"
 import ManagePlaces from "./managePlaces"
+import { useDebounce } from "./home"
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='manage/users' element={<ManageUsers />} />
-          <Route path='manage/places' element={<ManagePlaces />} />
+          <Route path='users' element={<ManageUsers />} />
+          <Route path='places' element={<ManagePlaces />} />
         </Routes>
       </BrowserRouter>
     </>
