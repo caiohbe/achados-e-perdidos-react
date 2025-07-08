@@ -445,7 +445,9 @@ function Home() {
                 </p>
                 <p>
                   <Label>Data encontrado:</Label>{" "}
-                  {dayjs(selectedItem.data_encontrado).format("DD/MM/YYYY")}
+                  {dayjs(selectedItem.data_encontrado)
+                    .utc()
+                    .format("DD/MM/YYYY")}
                 </p>
                 <p>
                   <Label>Local encontrado:</Label>{" "}
